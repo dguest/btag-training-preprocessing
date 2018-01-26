@@ -4,13 +4,13 @@
 
 # Set the minimum required CMake version:
 cmake_minimum_required( VERSION 3.2 FATAL_ERROR )
-find_package( AnalysisBase 21.2 REQUIRED EXACT )
+find_package( AnalysisBase 21.2 REQUIRED )
 
 # Set up CTest:
 atlas_ctest_setup()
 
 # Set up a work directory project:
-atlas_project( WorkDir 21.2.0 USE AnalysisBase 21.2.0 )
+atlas_project( WorkDir 21.2.15 USE AnalysisBase 21.2.15 )
 
 # Set up the runtime environment setup script(s):
 lcg_generate_env( SH_FILE ${CMAKE_BINARY_DIR}/${ATLAS_PLATFORM}/env_setup.sh )

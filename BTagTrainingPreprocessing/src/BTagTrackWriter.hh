@@ -6,7 +6,7 @@
 #include <vector>
 
 namespace H5 {
-  class CommonFG;
+  class Group;
 }
 namespace xAOD {
   class TrackParticle_v1;
@@ -22,7 +22,7 @@ class BTagTrackWriter
 public:
   typedef std::vector<const xAOD::TrackParticle*> Tracks;
   BTagTrackWriter(
-    H5::CommonFG& output_file,
+    H5::Group& output_file,
     const BTagTrackWriterConfig&);
   ~BTagTrackWriter();
   BTagTrackWriter(BTagTrackWriter&) = delete;

@@ -9,7 +9,7 @@
 #include "xAODTracking/TrackParticle.h"
 
 BTagTrackWriter::BTagTrackWriter(
-  H5::CommonFG& output_file,
+  H5::Group& output_file,
   const BTagTrackWriterConfig& config):
   m_current_tracks()
 {

@@ -20,7 +20,7 @@ class BTagJetWriter
 {
 public:
   BTagJetWriter(
-    H5::CommonFG& output_file,
+    H5::Group& output_file,
     const BTagJetWriterConfig& jet);
   ~BTagJetWriter();
   BTagJetWriter(BTagJetWriter&) = delete;

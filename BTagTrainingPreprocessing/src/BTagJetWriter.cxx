@@ -4,7 +4,7 @@
 
 
 BTagJetWriter::BTagJetWriter(
-  H5::CommonFG& output_file,
+  H5::Group& output_file,
   const BTagJetWriterConfig& config)
 {
 
